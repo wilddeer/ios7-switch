@@ -4,12 +4,15 @@
     cursor: pointer;
 }
 
-.ios7-switch input {
+/* `:root` is used as a filter for older browsers.
+ * You can use modernizr classes or conditional classes/stylesheets instead.
+ */
+:root .ios7-switch input {
     opacity: 0;
     position: absolute;
 }
 
-.ios7-switch span {
+:root .ios7-switch input + span {
     position: relative;
     display: inline-block;
     width: 1.65em;
@@ -27,11 +30,11 @@
     tap-highlight-color: transparent;
 }
 
-.ios7-switch:active span {
+:root .ios7-switch:active input + span {
     box-shadow: inset 0 0 0 0.73em #e9e9e9;
 }
 
-.ios7-switch span:after {
+:root .ios7-switch input + span:after {
     position: absolute;
     display: block;
     content: '';
@@ -47,18 +50,52 @@
     transition: all 0.25s ease-out;
 }
 
-.ios7-switch:active span:after {
+:root .ios7-switch:active input + span:after,
+:root .ios7-switch input + span:active:after {
     width: 1.15em;
 }
 
-.ios7-switch input:checked + span {
+:root .ios7-switch input:checked + span {
     box-shadow: inset 0 0 0 0.73em #4cd964;
 }
 
-.ios7-switch input:checked + span:after {
+:root .ios7-switch input:checked + span:after {
     left: 0.7125em;
 }
 
-.ios7-switch:active input:checked + span:after {
+:root .ios7-switch:active input:checked + span:after,
+:root .ios7-switch input:checked + span:active:after {
     left: 0.4375em;
+}
+
+/* accessibility styles */
+:root .ios7-switch input:focus + span:after {
+    box-shadow: inset 0 0 0 0.03em rgba(0,0,0,0.15),
+                0 0 0.05em rgba(0,0,0,0.08),
+                0 0.1em 0.2em rgba(0,0,0,0.3);
+    background: #fff;
+}
+
+:root .ios7-switch input:focus + span {
+    box-shadow: inset 0 0 0 0.0625em #dadada;
+}
+
+:root .ios7-switch input:focus:checked + span {
+    box-shadow: inset 0 0 0 0.73em #33be4b;
+}
+
+/* reset accessibility style on hover */
+:root .ios7-switch:hover input:focus + span:after {
+    box-shadow: inset 0 0 0 0.03em rgba(0,0,0,0.1),
+                0 0 0.05em rgba(0,0,0,0.05),
+                0 0.1em 0.2em rgba(0,0,0,0.2);
+    background: #fff;
+}
+
+:root .ios7-switch:hover input:focus + span {
+    box-shadow: inset 0 0 0 0.0625em #e9e9e9;
+}
+
+:root .ios7-switch:hover input:focus:checked + span {
+    box-shadow: inset 0 0 0 0.73em #4cd964;
 }
