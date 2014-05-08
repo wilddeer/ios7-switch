@@ -1,5 +1,10 @@
-iOS7 style switch
-===========
+#iOS7 style switch
+
+[Check out the demo](http://wd.dizaina.net/en/experiments/ios7-style-switch/)
+
+![iOS7 style switch](http://wd.dizaina.net/pics/ios7-style-switch/ios7-style-switch.png)
+
+Features:
 
 - no shitty scripts, pure CSS,
 - the most accurate behavior, includes `:active` state styles,
