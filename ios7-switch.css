@@ -2,6 +2,12 @@
     display: inline-block;
     position: relative;
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
 }
 
 /* `:root` is used as a filter for older browsers.
@@ -22,15 +28,10 @@
     border-radius: 0.5em;
     vertical-align: -0.15em;
     transition: all 0.40s cubic-bezier(.17,.67,.43,.98);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
 }
 
-:root .ios7-switch:active input + span {
+:root .ios7-switch:active input + span,
+:root .ios7-switch input + span:active {
     box-shadow: inset 0 0 0 0.73em #e9e9e9;
 }
 
