@@ -9,7 +9,6 @@ Features:
 - no shitty scripts, pure CSS,
 - the most accurate behavior, includes `:active` state styles,
 - made with `em`s, sizes approprietaly to the font size,
-- supports IE9+, falls back to regular checkbox in older browsers,
 - accessible from keyboard.
 
 ###Usage
@@ -34,6 +33,12 @@ or
 or something else, you get the idea.
 
 ###Issues
+
+Doesn't work in older browsers with no `box-shadow` support (IE8 and lower, Android 3.x and lower). It's easy enough to make a fallback to a regular checkbox. For instance, using [Modernizr](http://modernizr.com) test:
+
+    Modernizr.addTest('unprefixed-boxshadow', Modernizr.testProp('boxShadow', '1px 1px', true));
+
+and modified stylesheet -- [ios7-switch.modernizr.css](https://github.com/wilddeer/ios7-switch/blob/master/ios7-switch.modernizr.css).
 
 Has some rounding error problems in some browsers at some font sizes. Tweak the font size a bit to get rid of those.
 
