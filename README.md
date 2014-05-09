@@ -34,7 +34,7 @@ or something else, you get the idea.
 
 ###Issues
 
-Doesn't work in older browsers with no `box-shadow` support (IE8 and lower, Android 3.x and lower). It's easy enough to make a fallback to a regular checkbox. For instance, using [Modernizr](http://modernizr.com) test:
+Doesn't work in older browsers with no `box-shadow` support (IE8 and lower, Android 3.x and lower). It's easy enough to make a fallback to regular checkboxes. For instance, using [Modernizr](http://modernizr.com) test
 
     Modernizr.addTest('unprefixed-boxshadow', Modernizr.testProp('boxShadow', '1px 1px', true));
 
