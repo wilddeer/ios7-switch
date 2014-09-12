@@ -17,18 +17,22 @@ Grab the css. Use it!
 
 ###Markup
 
-    <label class="ios7-switch">
-        <input type="checkbox" checked>
-        <span></span>
-    </label>
+```html
+<label class="ios7-switch">
+    <input type="checkbox" checked>
+    <span></span>
+</label>
+```
 
 or
 
-    <label class="ios7-switch">
-        <input type="checkbox" checked>
-        <span></span>
-        Mah shitty option!
-    </label>
+```html
+<label class="ios7-switch">
+    <input type="checkbox" checked>
+    <span></span>
+    Mah shitty option!
+</label>
+```
 
 or something else, you get the idea.
 
