@@ -1,4 +1,4 @@
-#iOS7 style switch
+# iOS7 style switch
 
 [Check out the demo](http://wd.dizaina.net/en/experiments/ios7-style-switch/)
 
@@ -11,11 +11,11 @@ Features:
 - made with `em`s, sizes approprietaly to the font size,
 - accessible from keyboard.
 
-###Usage
+## Usage
 
 Grab the css. Use it!
 
-###Markup
+## Markup
 
 ```html
 <label class="ios7-switch">
@@ -36,7 +36,7 @@ or
 
 or something else, you get the idea.
 
-###Caveats
+## Caveats
 
 Doesn't work in older browsers with no `box-shadow` support (IE8 and lower, Android 3.x and lower). It's easy enough to make a fallback to regular checkboxes. For instance, using [Modernizr](http://modernizr.com) test
 
@@ -46,6 +46,6 @@ and modified stylesheet -- [ios7-switch.modernizr.css](https://github.com/wildde
 
 Has some rounding error problems in some browsers at some font sizes. Tweak the font size a bit to get rid of those.
 
-###License
+## License
 
 You kiddin me, it's 100 rows of CSS, just use it already! Ok, here's some text for ya: [CC0 1.0](http://creativecommons.org/publicdomain/zero/1.0/). Shit, I'm so generous!
