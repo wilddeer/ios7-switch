@@ -2,7 +2,7 @@
 
 [Check out the demo](http://wd.dizaina.net/en/experiments/ios7-style-switch/)
 
-![iOS7 style switch](http://wd.dizaina.net/pics/ios7-style-switch/ios7-style-switch.png)
+![iOS7 style switch](https://grumpy.blog/en/ios_7_style_switch/cover.png)
 
 Features:
 
