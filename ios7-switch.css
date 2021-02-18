@@ -97,3 +97,7 @@
 .ios7-switch:hover input:focus:checked + span {
     box-shadow: inset 0 0 0 0.73em #4cd964;
 }
+
+.ios7-switch:hover input:disabled + span {
+    cursor: not-allowed;
+}
